@@ -1,0 +1,89 @@
+<main class="main">
+  <div class="main-container">
+    <header class="header header-6">
+      <div class="branding">
+        <a href="javascript:void(0)">
+          <cds-icon shape="vm-bug"></cds-icon>
+          <span class="title">Project Clarity</span>
+        </a>
+      </div>
+      <div class="settings">
+        <a href="javascript://" class="nav-link nav-icon">
+          <cds-icon shape="cog"></cds-icon>
+        </a>
+      </div>
+    </header>
+    <nav class="subnav">
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="javascript://">Subnav Link 1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="javascript://">Subnav Link 2</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="javascript://">Subnav Link 3</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="javascript://">Subnav Link 4</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="javascript://">Subnav Link 5</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="content-container">
+      <div class="content-area">
+        <p>...</p>
+
+
+        <clr-timeline [clrLayout]="ClrTimelineLayout.VERTICAL" style="width: 50%">
+          <clr-timeline-step [clrState]="ClrTimelineStepState.NOT_STARTED">
+            <clr-timeline-step-header>11:59 am</clr-timeline-step-header>
+            <clr-timeline-step-title>Add KMS</clr-timeline-step-title>
+            <clr-timeline-step-description>Root CA certificate requested.</clr-timeline-step-description>
+          </clr-timeline-step>
+          <clr-timeline-step [clrState]="ClrTimelineStepState.CURRENT">
+            <clr-timeline-step-header>11:59 am</clr-timeline-step-header>
+            <clr-timeline-step-title>Add KMS</clr-timeline-step-title>
+            <clr-timeline-step-description>
+              Root CA certificate requested. Upload it to the KMS to complete the connection.
+                <img src="/assets/images/documentation/cards/placeholder_350x150.png" alt="Example of an Image in a Card" />
+            </clr-timeline-step-description>
+          </clr-timeline-step>
+          <clr-timeline-step class="gemini-ignore" [clrState]="ClrTimelineStepState.PROCESSING">
+            <clr-timeline-step-header>11:59 am</clr-timeline-step-header>
+            <clr-timeline-step-title>Make vCenter trust KMS</clr-timeline-step-title>
+            <clr-timeline-step-description>
+              Root CA certificate requested. Upload it to the KMS to complete the connection. Third sentence is very long
+              and very long.
+            </clr-timeline-step-description>
+          </clr-timeline-step>
+          <clr-timeline-step [clrState]="ClrTimelineStepState.SUCCESS">
+            <clr-timeline-step-header>11:59 am</clr-timeline-step-header>
+            <clr-timeline-step-title>Make KMS trust vCenter</clr-timeline-step-title>
+            <clr-timeline-step-description>Upload it to the KMS to complete the connection. Third
+              sentence.
+              <button class="btn btn-sm">Refresh</button>
+            </clr-timeline-step-description>
+          </clr-timeline-step>
+          <clr-timeline-step [clrState]="ClrTimelineStepState.ERROR">
+            <clr-timeline-step-header></clr-timeline-step-header>
+            <clr-timeline-step-title>Connected</clr-timeline-step-title>
+            <clr-timeline-step-description>No. It's not connected.</clr-timeline-step-description>
+          </clr-timeline-step>
+        </clr-timeline>
+
+
+      </div>
+      <clr-vertical-nav>
+        <a clrVerticalNavLink>Link 1</a>
+        <a clrVerticalNavLink>Link 2</a>
+        <a clrVerticalNavLink class="active">Link 3</a>
+        <a clrVerticalNavLink>Link 4</a>
+        <a clrVerticalNavLink>Link 5</a>
+        <a clrVerticalNavLink>Link 6</a>
+      </clr-vertical-nav>
+    </div>
+  </div>
+</main>
